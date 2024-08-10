@@ -104,7 +104,7 @@ jobs:
 
   deploy:
     needs: [train, test, build, push-image]
-    runs-on: ec1_runner_01
+    runs-on: ubuntu-latest
 
     steps:
       - name: Pull Docker Image
