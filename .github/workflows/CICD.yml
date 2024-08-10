@@ -103,6 +103,7 @@ jobs:
       run: docker logout
 
   deploy:
+    needs: [train, test, build, push-image]
     runs-on: ec1_runner_01
 
     steps:
