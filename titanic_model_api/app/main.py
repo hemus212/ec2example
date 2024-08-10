@@ -25,8 +25,9 @@ def index(request: Request) -> Any:
     """Basic HTML response."""
     body = (
         "<html>"
+        "<style>body {background-image: url(‘https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg’);}</style>"
         "<body style='padding: 10px;'>"
-        "<h1>Welcome to the API</h1>"
+        "<h1>Welcome to the API 2.0 </h1>"
         "<div>"
         "Check the docs: <a href='/docs'>here</a>"
         "</div>"
